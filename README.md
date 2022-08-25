@@ -15,4 +15,4 @@ The preparation of the csv files is done by `plot_temperatures.py`
 
 ## Sample plot
 
-![Sample data]('notebooks/data/img/temp-diff.png')
+![Sample data](notebooks/data/img/temp-diff.png)
