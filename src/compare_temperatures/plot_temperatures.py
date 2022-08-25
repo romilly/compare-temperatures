@@ -4,11 +4,10 @@ import pandas
 
 yesterday = '2022-08-23'
 
-def read_adafruit_feed_csv(csv, datacol, yesterday):
+def read_adafruit_feed_csv(csv, datacol, start_dt):
     df = pandas.read_csv(csv, parse_dates=['created_at'])
-    df.dropna(axis=1, how='all',inplace=True)
-    df = df[df['created_at']>= yesterday]
-    df = df.drop(columns=['id','feed_id'])
+    df = df[df['created_at'] >= start_dt]
+    df = df.drop(columns=['id', 'feed_id', 'lat', 'lon', 'ele'])
     df.rename(columns={'value' : datacol}, inplace=True)
     df['created'] = df['created_at'].map(lambda x: x.replace(second=0))
     df = df.drop(columns=['created_at'])
