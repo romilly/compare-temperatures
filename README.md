@@ -1,6 +1,6 @@
 # Compare temperature readings from different sensors
 
-I've been recording temerature data from a TMP36 temperature sensor
+I've been recording temperature data from a TMP36 temperature sensor
 and a home-breaw weather station.
 
 The weather station includes a light level sensor and a
@@ -10,5 +10,9 @@ Both devices use MQTT to transmit their readings to [Adafruit.IO](https://io.ada
 
 The temperature readings differ more than I'd expected, and I'm using Pandas to analyse the downloaded data.
 
-The higih-level analysis is done using a Jupyter notebook. The prepratation of the csv files
+The higih-level analysis is done using a Jupyter notebook.
+The preparation of the csv files is done by `plot_temperatures.py`
 
+## Sample plot
+
+![Sample data]('notebooks/data/img/temp-diff.png')
