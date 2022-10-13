@@ -15,9 +15,9 @@ def read_adafruit_feed_csv(csv, datacol, start_dt):
     df = df.drop(columns=['created'])
     return df
 
-
-bme280 = read_adafruit_feed_csv('data/bme280-temp-20220824-0701.csv', 'bme280', yesterday)
-tmp36 = read_adafruit_feed_csv('data/temp-tmp36-20220824-0659.csv', 'tmp36', yesterday)
+#
+# bme280 = read_adafruit_feed_csv('data/bme280-temp-20220824-0701.csv', 'bme280', yesterday)
+# tmp36 = read_adafruit_feed_csv('data/temp-tmp36-20220824-0659.csv', 'tmp36', yesterday)
 
 
 

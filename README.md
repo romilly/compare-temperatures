@@ -1,4 +1,9 @@
-# Compare temperature readings from different sensors
+# Environmentla Monitoring with Raspebrry Pi Pico and MQTT
+
+This started out as a project to explore the data returned by two Pico-based home-brewed environmental monitors,
+but I'm extending it to cover the Adafruit PMS300i particulate sensor. Later I may add the Pimoroni Enviro Urban.
+
+## Compare temperature readings from different sensors
 
 I've been recording temperature data from a TMP36 temperature sensor
 and a home-brew weather station, implemented in MicroPython running on two Raspberry Pi Pico W boards.
@@ -25,3 +30,8 @@ The sensors are indoors just inside a window which is normally open during the d
 The rapid exponential rise at 10 Pm and fall at 5:54 AM are due to the closing and opening of the window,
 
 The peak at 11 AM is due to sunlight falling on both sensors.
+
+## The Particulate Sensor.
+
+The readings I've been capturing from this are surprising, but may be correct.
+I'm going to do a bit more exploratory analysis.
