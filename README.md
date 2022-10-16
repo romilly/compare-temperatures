@@ -27,7 +27,7 @@ _Warning:_ I'm a novice user of Pandas, and there may be better ways of manipula
 
 The sensors are indoors just inside a window which is normally open during the day but closed at night.
 
-The rapid exponential rise at 10 Pm and fall at 5:54 AM are due to the closing and opening of the window,
+The rapid exponential rise at 10 Pm and fall at 5:54 AM are due to the closing and opening of the window.
 
 The peak at 11 AM is due to sunlight falling on both sensors.
 
